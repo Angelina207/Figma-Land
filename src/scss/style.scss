@@ -1,8 +1,9 @@
-@import './general/reset.scss';
-@import './general/body.scss';
-@import './general/fonts.scss';
-
 @import './vars/vars.scss';
+
+@import './general/reset.scss';
+@import './general/fonts.scss';
+@import './general/body.scss';
+@import './general/general.scss';
 
 @import './pages/header.scss';
 @import './pages/features.scss';

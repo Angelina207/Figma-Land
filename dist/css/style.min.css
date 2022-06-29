@@ -252,42 +252,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  min-width: 320px;
-  font-family: "Roboto";
-}
-
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 30px;
-    max-width: 708px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 964px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 0 80px;
-    max-width: 1280px;
-  }
-}
-
 @font-face {
   font-family: Roboto;
   font-display: swap;
@@ -321,4 +285,64 @@ body {
   src: url("/fonts/Roboto-Light.woff2") format("woff2"), url("/fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-width: 320px;
+  font-family: "Roboto";
+  color: #252B42;
+  background-color: #fff;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+    max-width: 708px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 964px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 80px;
+    max-width: 1280px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.description {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #374754;
+  font-size: 16px;
+  font-weight: 700;
 }
