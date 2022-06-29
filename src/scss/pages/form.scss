@@ -12,7 +12,6 @@
 }
 .form-title{
     color: #fff;
-    font-weight: 300;
     padding-top: 17px;
     line-height: 57px;
 }
@@ -74,5 +73,11 @@
 @media screen and (min-width: 480px) {
     .subscribe-input{
         width: calc(353px - 70px);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .form-section{
+        background: $bcgGradient;
+        padding: 70px 0 70px 0;
     }
 }
