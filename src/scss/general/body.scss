@@ -1,0 +1,27 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-width: 320px;
+    font-family: "Roboto";
+}
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media screen and(min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and(min-width: 768px) {
+        padding: 0 30px;
+        max-width: 708px;
+    }
+    @media screen and(min-width: 1024px) {
+        max-width: 964px;
+    }
+    @media screen and(min-width: 1440px) {
+        padding: 0 80px;
+        max-width: 1280px;
+    }
+}
