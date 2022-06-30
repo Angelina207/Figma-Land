@@ -37,6 +37,10 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
@@ -340,6 +344,7 @@ body {
   justify-content: center;
   font-size: 22px;
   font-weight: 700;
+  line-height: 20px;
 }
 
 .description {
@@ -696,4 +701,69 @@ body {
     width: 50px;
     height: 50px;
   }
+}
+.contact {
+  background-color: #252B42;
+  padding: 95px 0;
+}
+
+.contact-title {
+  color: #fff;
+}
+
+.contact-desc {
+  padding-top: 27px;
+  color: #fff;
+}
+
+.contact__network {
+  padding-top: 64px;
+}
+
+.network-list {
+  display: flex;
+  justify-content: center;
+}
+
+.network-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.network-item:nth-child(even) {
+  padding: 0 24px;
+}
+
+.network-link {
+  cursor: pointer;
+}
+
+.contact__connect {
+  padding-top: 50px;
+}
+
+.connect-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.connect-item {
+  display: flex;
+}
+
+.connect-item:nth-child(even) {
+  padding: 10px 0;
+}
+
+.connect-link {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  padding-left: 10px;
 }
