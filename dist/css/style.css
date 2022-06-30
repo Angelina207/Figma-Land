@@ -179,6 +179,10 @@ input[type=submit] {
   *overflow: visible; /* 4 */
 }
 
+button {
+  border: none;
+}
+
 /**
  * Re-set default cursor for disabled elements.
  */
