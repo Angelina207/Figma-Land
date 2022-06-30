@@ -43,7 +43,9 @@
     max-width: 218px;
 }
 .partner-btn-box{
-
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
 }
 .partner-btn{
     font-family: 'Roboto';
