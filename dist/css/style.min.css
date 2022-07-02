@@ -781,17 +781,6 @@ body {
   margin-top: 50px;
 }
 
-.contact-label {
-  position: absolute;
-  color: #252B42;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.01em;
-  transition: ease 300ms;
-  padding-left: 20px;
-  transform: translateY(20px);
-}
-
 .contact-input {
   width: calc(100% - 42px);
   margin-bottom: 45px;
@@ -803,13 +792,30 @@ body {
   transition: ease 300ms;
 }
 
-.contact-textarea {
+.contact-input:hover,
+.contact-input:focus {
+  border: 1px solid #EF2779;
+}
+
+.contact-input::placeholder {
+  color: #252B42;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  transition: ease 300ms;
+  font-family: "Roboto";
+}
+
+.contact-input:hover::placeholder,
+.contact-input:focus::placeholder {
+  color: #EF2779;
+}
+
+#userMessage {
   resize: none;
   border-radius: 5px;
   height: 147px;
   padding: 20px;
-  border: 1px solid #E8E8E8;
-  background-color: #F5F5F5;
 }
 
 .contact-btn-send {
@@ -822,9 +828,35 @@ body {
   font-size: 16px;
   font-family: "Roboto";
   border-radius: 35px;
+  outline: 1px solid #EF2779;
+  outline-offset: 0px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.contact-input:hover,
-.contact-input:focus {
-  border: 1px solid #EF2779;
+.contact-btn-send:hover,
+.contact-btn-send:focus {
+  box-shadow: inset 0 0 10px #BFE2FF;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  color: #FFF;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-content {
+    flex-direction: row-reverse;
+    padding-top: 50px;
+  }
+  .contact__connect {
+    padding: 0;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 65px;
+  }
+  .contact-form {
+    max-width: 320px;
+    padding: 79px 40px 26px;
+    margin-top: 0;
+  }
 }
