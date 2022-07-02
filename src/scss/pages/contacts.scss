@@ -119,11 +119,6 @@
     border: 1px solid $accent;
 }
 
-.contact-input:hover + .contact-label,
-.contact-input:focus + .contact-label{
-    color: $accent;
-    transform: translateY(-25px);
-    padding-left: 5px;
-}
+
 
 
