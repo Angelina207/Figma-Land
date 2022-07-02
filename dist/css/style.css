@@ -965,11 +965,33 @@ body {
 }
 
 .page-link {
+  overflow: hidden;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.01em;
   color: #252B42;
   line-height: 27px;
+  transition: all 300ms;
+}
+
+.page-link:hover,
+.page-link:focus {
+  color: #EF2779;
+}
+
+.page-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #EF2779;
+  transform: translateX(-200px);
+  transition: transform 500ms;
+}
+
+.page-link:hover::after,
+.page-link:focus::after {
+  transform: translateX(0px);
 }
 
 .foo__map {
