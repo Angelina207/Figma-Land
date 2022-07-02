@@ -772,6 +772,89 @@ body {
     height: 50px;
   }
 }
+.price {
+  padding: 110px 0 100px;
+}
+
+.price-desc {
+  padding-top: 17px;
+}
+
+.price-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.price__card {
+  width: 253px;
+  padding: 40px;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.price__card:nth-child(even) {
+  margin: 50px 0;
+}
+
+.card-head {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+}
+
+.card-desc {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.card-body {
+  display: flex;
+  padding-top: 25px;
+}
+
+.card-price {
+  font-weight: 900;
+  font-size: 55px;
+}
+
+.card-condition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.card-symbol {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.card-period {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.card-button {
+  width: 100%;
+  padding: 18px 0;
+  color: #fff;
+  background-color: #38A3F1;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  border-radius: 35px;
+  margin-top: 30px;
+}
+
 .contact {
   background-color: #252B42;
   padding: 95px 0;
