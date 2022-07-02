@@ -558,6 +558,49 @@ body {
     grid-gap: 65px;
   }
 }
+.prototype {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .prototype {
+    display: block;
+    padding: 110px 0;
+  }
+  .prototype-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prototype-title {
+    text-align: center;
+    line-height: 57px;
+    padding-bottom: 17px;
+  }
+  .prototype-box {
+    padding-top: 70px;
+  }
+  .prototype-btn {
+    padding: 16px 0;
+    width: 236px;
+    border-radius: 35px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 19px;
+    background-color: #38A3F1;
+    margin: 60px 0 0;
+  }
+  .prototype-img {
+    max-width: 768px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .prototype-img {
+    max-width: 1033px;
+  }
+}
 .form-section {
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
   padding: 80px 0 114px 0;
