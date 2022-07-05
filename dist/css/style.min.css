@@ -788,8 +788,9 @@ body {
 }
 
 .price__card {
-  width: 253px;
-  padding: 40px;
+  background-color: #fff;
+  width: 243px;
+  padding: 20px;
   border: 1px solid #E8E8E8;
   border-radius: 10px;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
@@ -797,6 +798,18 @@ body {
 
 .price__card:nth-child(even) {
   margin: 50px 0;
+}
+
+.price__card:hover,
+.price__card:focus {
+  background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+  color: #fff;
+}
+
+.price__card:hover > .card-link,
+.price__card:focus > .card-link {
+  background-color: #fff;
+  color: #EF2779;
 }
 
 .card-head {
@@ -842,19 +855,51 @@ body {
   letter-spacing: 0.01em;
 }
 
-.card-button {
+.card-link {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 18px 0;
   color: #fff;
   background-color: #38A3F1;
   font-weight: 500;
   font-size: 16px;
-  font-family: "Roboto";
   letter-spacing: 0.02em;
   border-radius: 35px;
   margin-top: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .price__card {
+    width: 253px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .price-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .price__card {
+    width: 243px;
+    padding: 20px;
+  }
+  .price__card:nth-child(even) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .price-content {
+    justify-content: center;
+  }
+  .price__card {
+    width: 253px;
+    padding: 40px;
+  }
+  .price__card:nth-child(even) {
+    margin: 0 40px;
+  }
+}
 .contact {
   background-color: #252B42;
   padding: 95px 0;
