@@ -384,7 +384,8 @@ body {
 }
 
 .header {
-  padding-top: 17px;
+  position: relative;
+  padding-top: 40px;
   height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
 }
@@ -392,6 +393,74 @@ body {
 .header-content {
   display: flex;
   justify-content: space-between;
+}
+
+.header__burger {
+  position: relative;
+  width: 27px;
+  margin-top: 25px;
+}
+
+.burger-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.burger-line::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.burger-line::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: block;
+  width: 45%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.hero-desc {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  color: #fff;
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.hero-subtitle {
+  padding-top: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.wave-bcg {
+  position: absolute;
+  bottom: -1%;
+  width: 100%;
+  height: 124px;
+  background: #fff;
 }
 
 .feature {
