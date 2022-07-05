@@ -383,6 +383,17 @@ body {
   left: 100%;
 }
 
+.header {
+  padding-top: 17px;
+  height: 100vh;
+  background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature {
   padding: 23px 0 108px;
 }
