@@ -44,6 +44,53 @@
     background-color: #fff;
 }
 
+// Navigation
+.nav-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    height: 100vh;
+    background-color: #fff;
+    padding: 40px;
+    overflow: hidden;
+}
+.nav-link{
+    position: relative;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: $text;
+    letter-spacing: 0.02em;
+    line-height: 27px;
+    transition: all ease 300ms;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: $accent;
+}
+.nav-email-field{
+
+}
+.nav-email-btn{
+    width: calc(100% - 40px);
+    padding: 16px 0;
+    border-radius: 35px;
+    background-color: $accent;
+    color: #fff;
+    transition: all 300ms;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-email-btn:hover,
+.nav-email-btn:focus {
+    border: 1px solid $accent;
+    background-color: transparent;
+    color: $accent;
+}
+
 // Hero
 .hero-desc{
     padding-top: 80px;
@@ -65,7 +112,19 @@
     font-size: 16px;
     line-height: 20px;
 }
-
+.hero-img{
+    max-width: 380px;
+}
+.hero-btn{
+    width: 236px;
+    margin-top: 50px;
+    padding: 16px 0;
+    border-radius: 35px;
+    background-color: $accentSec;
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+}
 // Wawes
 .wave-bcg{
     position: absolute;
