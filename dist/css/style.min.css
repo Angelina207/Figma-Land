@@ -392,7 +392,6 @@ button {
   padding-top: 40px;
   height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
-  overflow: hidden;
 }
 
 .header-content {
@@ -437,17 +436,53 @@ button {
   background-color: #fff;
 }
 
-.nav-content {
+.header__nav {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: -500px;
+  width: calc(100% - 80px);
+  height: 100%;
+  background-color: #fff;
+  padding: 80px 40px 40px;
+  transition: all ease 300ms;
+}
+
+.is-open {
+  right: 0;
+}
+
+.nav-btn-inner {
+  display: none;
+}
+
+.is-open > .nav-btn-inner {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: block;
+  width: 26px;
+}
+
+.nav-btn-close {
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 80px);
-  height: 100vh;
-  background-color: #fff;
-  padding: 40px;
-  transform: translateX(500px);
+  width: 100%;
+  height: 3px;
+  background-color: #EF2779;
+  transform: rotate(45deg);
+}
+
+.nav-btn-close::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #EF2779;
+  transform: rotate(-90deg);
 }
 
 .nav-link {
