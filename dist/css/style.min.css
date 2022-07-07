@@ -397,49 +397,12 @@ button {
 
 .header-content {
   display: flex;
-}
-
-.header__burger {
-  position: absolute;
-  width: 27px;
-  margin-top: 25px;
-  right: 20px;
-}
-
-.burger-line {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-}
-
-.burger-line::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 0;
-  display: block;
-  width: 70%;
-  height: 3px;
-  background-color: #fff;
-}
-
-.burger-line::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 0;
-  display: block;
-  width: 45%;
-  height: 3px;
-  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
   position: absolute;
-  overflow: hidden;
   top: 0;
   right: -1500px;
   width: calc(100% - 80px);
@@ -454,39 +417,6 @@ button {
   overflow: auto;
   z-index: 100;
   right: 0;
-}
-
-.nav-btn-inner {
-  display: none;
-}
-
-.is-open > .nav-btn-inner {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  display: block;
-  width: 26px;
-}
-
-.nav-btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #EF2779;
-  transform: rotate(45deg);
-}
-
-.nav-btn-close::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #EF2779;
-  transform: rotate(-90deg);
 }
 
 .nav-link {
@@ -507,6 +437,10 @@ button {
   color: #fff;
   background-color: #EF2779;
   opacity: 0.8;
+}
+
+.nav-link-sub {
+  display: none;
 }
 
 .nav-email-form {
@@ -565,6 +499,144 @@ button {
 @media screen and (min-width: 380px) {
   .header__nav {
     max-width: 240px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    position: static;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    margin-left: 170px;
+  }
+  .nav-content {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    display: block;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: none;
+    padding: 10px;
+  }
+  .nav-link:nth-child(even) {
+    margin: 0 20px;
+  }
+  .nav-link:hover,
+.nav-link:focus {
+    background-color: transparent;
+    opacity: 1;
+  }
+  .nav-link-sub {
+    display: block;
+    background-color: #fff;
+    color: #EF2779;
+    padding: 19px 38px;
+    border-radius: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: box-shadow, 250ms;
+    margin-left: 45px;
+  }
+  .nav-link-sub:hover,
+.nav-link-sub:focus {
+    box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
+  }
+  .nav-email-form {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-link-sub {
+    display: none;
+  }
+  .nav-email-form {
+    display: flex;
+    width: 273px;
+    padding-top: 0;
+    margin-left: 45px;
+  }
+}
+.header__burger {
+  position: relative;
+  width: 27px;
+  right: 20px;
+}
+
+.burger-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.burger-line::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.burger-line::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0;
+  display: block;
+  width: 45%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.nav-btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #EF2779;
+  transform: rotate(45deg);
+}
+
+.nav-btn-close::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #EF2779;
+  transform: rotate(-90deg);
+}
+
+.nav-btn-inner {
+  display: none;
+}
+
+.is-open > .nav-btn-inner {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: block;
+  width: 26px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__burger {
+    display: none;
+  }
+  .nav-btn-inner {
+    display: none;
   }
 }
 .overlay {
