@@ -392,6 +392,7 @@ button {
   padding-top: 40px;
   height: 100vh;
   background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+  overflow: hidden;
 }
 
 .header-content {
@@ -440,15 +441,18 @@ button {
   position: absolute;
   overflow: hidden;
   top: 0;
-  right: -500px;
+  right: -1500px;
   width: calc(100% - 80px);
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   padding: 80px 40px 40px;
   transition: all ease 300ms;
 }
 
 .is-open {
+  position: fixed;
+  overflow: auto;
+  z-index: 100;
   right: 0;
 }
 
@@ -556,6 +560,22 @@ button {
   border: 1px solid #EF2779;
   background-color: transparent;
   color: #EF2779;
+}
+
+@media screen and (min-width: 380px) {
+  .header__nav {
+    max-width: 240px;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  display: none;
 }
 
 .hero-desc {
