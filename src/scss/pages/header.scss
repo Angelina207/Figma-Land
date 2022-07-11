@@ -1,9 +1,8 @@
 .header{
+    overflow: hidden;
     position: relative;
     padding-top: 40px;
     height: 100vh;
-    background: $bcgGradient;
-    overflow: hidden;
 }
 .header-content{
     display: flex;
@@ -49,6 +48,7 @@
 .nav-link-sub{
     display: none;
 }
+
 //Nav Email From
 .nav-email-form{
     width: 100%;
@@ -70,6 +70,7 @@
         font-size: 14px;
         line-height: 16px;
         color: $text;
+        transition: 300ms;
     }
 }
 .nav-email-field:hover,
@@ -117,8 +118,10 @@
         display: flex;
         align-items: center;
     }
+
+    // Nav Links
     .nav-link{
-        display: block;
+        display: flex;
         font-weight: 300;
         font-size: 15px;
         color: #fff;
@@ -132,6 +135,7 @@
     .nav-link:focus {
         background-color: transparent;
         opacity: 1;
+        border-bottom: 1px solid #fff;
     }
     .nav-link-sub{
         display: block;
@@ -148,19 +152,54 @@
     .nav-link-sub:focus {
         box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
     }
+
+// Email From
     .nav-email-form{
         display: none;
     }
 }
 
 @media screen and(min-width: 1440px) {
+    .header__nav{
+        margin-left: 205px;
+    }
     .nav-link-sub{
         display: none;
     }
+
+// Email From
     .nav-email-form{
         display: flex;
-        width: 273px;
+        flex-direction: row;
+        width: 100%;
         padding-top: 0;
         margin-left: 45px;
+    }
+    .nav-email-field{
+        width: calc(273px - 80px);
+        padding: 0 40px;
+        border: none;
+    }
+    .nav-email-field:hover,
+    .nav-email-field:focus {
+        border: none;
+        box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
+    }
+    .nav-email-field:hover::placeholder,
+    .nav-email-field:focus::placeholder {
+        color: $accent;
+    }
+    .nav-email-btn{
+        margin: 0 0 0 12px;
+        width: 141px;
+        background-color: #fff;
+        color: $accent;
+    }
+    .nav-email-btn:hover,
+    .nav-email-btn:focus {
+        border: none;
+        background-color: #fff;
+        color: $accent;
+        box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
     }
 }

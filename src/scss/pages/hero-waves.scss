@@ -1,0 +1,39 @@
+.header {
+    background: url('/img/hero/bcg-Mobile.png'), url('/img/hero/bcg-Mobile-Light.png');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 480px 84%, 480px 100%;
+}
+
+@media screen and(min-width: 480px) {
+    .header {
+        background-size: 768px 80%, 768px 95%;
+    } 
+}
+
+@media screen and(min-width: 768px) {
+    .header {
+        background: url('/img/hero/bcg-Desk.png'), url('/img/hero/bcg-Desk-Light.png');
+        background-repeat: no-repeat;
+        background-position: 2% 0%;
+        background-size: 1024px 80%, 1024px 95%;
+    } 
+}
+
+@media screen and(min-width: 1024px) {
+    .header {
+        background-size: 1440px 85%, 1440px 100%;
+    } 
+}
+
+@media screen and(min-width: 1440px) {
+    .header {
+        background-size: 2048px 85%, 2048px 100%;
+    } 
+}
+
+@media screen and(min-width: 2048px) {
+    .header {
+        background-size: 3048px 85%, 3048px 100%;
+    } 
+}

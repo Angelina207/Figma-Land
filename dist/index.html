@@ -8,7 +8,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="home">
     <div class="container">
         <div class="header-content">
             <div class="header__logo">
@@ -25,11 +25,12 @@
                 </div>
 
                 <nav class="nav-content">
-                    <a class="nav-link" href="#">Home</a>
-                    <a class="nav-link" href="#">Product</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#product">Product</a>
+                    <a class="nav-link" href="#price">Pricing</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#contact">Contact</a>
+                    
                     <form id="navFrom" method="POST" class="nav-email-form">
                         <input class="nav-email-field" type="email" required placeholder="Your Email">
                         <button class="nav-email-btn" form="navFrom">Subscribe</button>
@@ -43,26 +44,27 @@
         <div class="overlay"></div>
 
         <div class="hero">
-            <div class="hero-content">
-                <div class="hero-desc">
-                    <h2 class="hero-title">
-                        We focus on <br>
-                        ergonomics 
-                    </h2>
-                    <p class="hero-subtitle">
-                        Most calendars are designed for teams. <br>
-                        Slate is designed for freelancers
-                    </p>
+            <div class="hero-desc">
+                <h2 class="hero-title">
+                    We focus on <br>
+                    ergonomics 
+                </h2>
+                <p class="hero-subtitle">
+                    Most calendars are designed for teams. <br>
+                    Slate is designed for freelancers
+                </p>
+                <div class="hero-btn-wrapp">
+                    <button class="hero-btn">Try For Free</button>
                 </div>
-                <!-- <div>
-                    <img class="hero-img" src="/img/header-logo/screen.png" alt="screenshot">
-                </div>
-                <button class="hero-btn">Try For Free</button> -->
+            </div>
+            <div class="hero-img-wrapp">
+                <img class="hero-img" src="/img/hero/browser-screen.png" alt="Screenshot">
             </div>
         </div>
     </div>
-</header>
-	<section class="feature">
+    </div>
+</header> 
+	<section class="feature" id="product">
     <div class="container">
         <p class="subtitle">At your fingertips</p>
         <h3 class="title feature-title">Features</h3>
@@ -155,7 +157,7 @@
         </div>
     </div>
 </section>
-	<section class="partners">
+	<section class="partners" id="about">
     <div class="container">
         <h3 class="title">Partners</h3>
         <p class="description partner-desc">
@@ -261,7 +263,7 @@
         </div>
     </div>
 </section>
-	<section class="price">
+	<section class="price" id="price">
     <div class="container">
         <h2 class="title">Pricing</h2>
         <p class="description price-desc">

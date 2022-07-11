@@ -1,6 +1,9 @@
 // Hero
+.hero{
+    position: relative;
+    padding-top: 60px;
+}
 .hero-desc{
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -18,25 +21,111 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+// Hero Image
+.hero-img-wrapp{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 .hero-img{
-    max-width: 380px;
+    z-index: 20;
+    max-width: 290px;
+    max-height: 200px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
+}
+
+// Hero Button
+.hero-btn-wrapp{
+    position:absolute;
+    bottom: -80px;
+    left: calc(50% - 118px);
 }
 .hero-btn{
     width: 236px;
-    margin-top: 50px;
     padding: 16px 0;
     border-radius: 35px;
     background-color: $accentSec;
     color: #fff;
     font-weight: 700;
     font-size: 19px;
+    transition: all 300ms;
 }
-// Wawes
-.wave-bcg{
-    position: absolute;
-    bottom: -1%;
-    width: 100%;
-    height: 124px;
-    background: #fff;
+.hero-btn:hover,
+.hero-btn:focus {
+    box-shadow: 0px 5px 10px 5px rgba(47, 0, 17, 0.2);
+}
+
+@media screen and(min-width: 380px) {
+    .hero-img{
+        max-width: 340px;
+        max-height: 260px;
+    }
+}
+@media screen and(min-width: 768px) {
+    .hero{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .hero-img-wrapp{
+        margin-top: 0;
+    }
+    .hero-img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .hero-desc{
+        position: relative;
+        text-align: start;
+        justify-content: flex-start;
+        padding: 20px 0 20px 40px;
+        min-width: 300px;
+    }
+    .hero-btn-wrapp{
+        bottom: 20px;
+        left: 40px;
+    }
+    .hero-btn{
+        background-color: #fff;
+        color: $accentSec;
+    }
+}
+
+@media screen and(min-width: 1024px) {
+    .hero-title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .hero-desc{
+        padding: 50px 0 50px 40px;
+        min-width: 360px;
+    }
+    .hero-subtitle{
+        padding-top: 17px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hero-btn-wrapp{
+        bottom: 60px;
+    }
+}
+@media screen and(min-width: 1440px) {
+    .hero-img{
+        width: 790px;
+        height: 550px;
+    }
+    .hero-desc{
+        padding: 64px 0 64px 60px;
+        min-width: 420px;
+    }
+    .hero-btn-wrapp{
+        bottom: 150px;
+        left: 60px;
+    }
 }
