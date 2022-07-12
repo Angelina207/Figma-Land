@@ -1507,6 +1507,9 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
+  .contact__network {
+    justify-content: flex-start;
+  }
   .contact-content {
     flex-direction: row-reverse;
     padding-top: 50px;
@@ -1599,6 +1602,10 @@ button {
   width: 100%;
   height: 248px;
   margin: 0 auto;
+}
+
+.contact__network--flex-start {
+  justify-content: flex-start;
 }
 
 .foo-contact {

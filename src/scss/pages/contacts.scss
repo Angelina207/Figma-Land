@@ -127,6 +127,9 @@
     color: #FFF;
 }
 @media screen and(min-width: 1024px) {
+    .contact__network{
+        justify-content: flex-start;
+    }
     .contact-content{
         flex-direction: row-reverse;
         padding-top: 50px;

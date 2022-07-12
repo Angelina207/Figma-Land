@@ -65,6 +65,9 @@
     margin: 0 auto;
 }
 //Section Contact
+.contact__network--flex-start{
+    justify-content: flex-start;
+}
 .foo-contact{
     display: flex;
     flex-direction: column-reverse;
