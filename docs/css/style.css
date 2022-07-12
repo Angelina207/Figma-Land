@@ -815,7 +815,7 @@ button {
   }
 }
 .header {
-  background: url("/img/hero/bcg-Mobile.png"), url("/img/hero/bcg-Mobile-Light.png");
+  background: url("./img/hero/bcg-Mobile.png"), url("./img/hero/bcg-Mobile-Light.png");
   background-repeat: no-repeat;
   background-position: 0% 0%;
   background-size: 480px 84%, 480px 100%;
@@ -828,7 +828,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .header {
-    background: url("/img/hero/bcg-Desk.png"), url("/img/hero/bcg-Desk-Light.png");
+    background: url("./img/hero/bcg-Desk.png"), url("./img/hero/bcg-Desk-Light.png");
     background-repeat: no-repeat;
     background-position: 2% 0%;
     background-size: 1024px 80%, 1024px 95%;
