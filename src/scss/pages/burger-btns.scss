@@ -1,6 +1,7 @@
-// Burder Button Open
+// Burger Button Open
 .header__burger{
     position: relative;
+    display: block;
     width: 27px;
 }
 .burger-line{
@@ -32,7 +33,7 @@
     background-color: #fff;
 }
 
-// Burder Button Close
+// Burger Button Close
 .nav-btn-close{
     position: absolute;
     top: 0;
